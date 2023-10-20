@@ -1,7 +1,6 @@
 Go shoppping now
 Go pet my dog
-Newest todo
 Master python
 Commit changes
 Boo boo boo
- last to do
+Fix the code
