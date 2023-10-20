@@ -50,7 +50,7 @@ while True:
             try:
                 todo_to_complete = values['todos'][0]
                 todos = functions.get_todos()
-                todos.remove(todo_to_complfete)
+                todos.remove(todo_to_complete)
                 functions.write_todos(todos)
                 window['todos'].update(values=todos)
                 window['todo'].update(value="")
