@@ -1,6 +1,7 @@
 import functions
 import PySimpleGUI as sg
 import time
+import os
 
 sg.theme("DarkBlue6")
 
@@ -26,6 +27,7 @@ window = sg.Window("My To-Do App",
 while True:
     event, values = window.read(timeout=200)
     window['clock'].update(value=time.strftime('%b %d, %Y %H:%M:%S'))
+    print(values)
     match event:
         case "Add":
             todos = functions.get_todos()
@@ -38,7 +40,7 @@ while True:
         case "Edit":
             try:
                 todo_to_edit = values['todos'][0]
-                new_todo = values['todo']
+                new_todo = values['todo'].replace("\n", "", 1) + "\n"
 
                 todos = functions.get_todos()
                 index = todos.index(todo_to_edit)

@@ -1,6 +1,5 @@
 Go shoppping now
 Go pet my dog
 Master python
-Commit changes
-Boo boo boo
 Fix the code
+Make soup with meat
